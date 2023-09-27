@@ -23,7 +23,9 @@ BEGIN {
     }
 
     # convert angle to radians
+    printf("Angle in degrees: %f\n", angle);
     angle = radians(angle);
+    printf("Angle in radians: %f\n", angle);
 
     # call the functions to print the results
     sine(angle);
