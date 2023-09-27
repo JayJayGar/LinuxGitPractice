@@ -8,6 +8,7 @@
 @include "cosine.awk"
 @include "sine.awk"
 @include "tangent.awk"
+@include "radians.awk"
 
 # this program doesn't read input from files
 BEGIN {
@@ -20,6 +21,9 @@ BEGIN {
     } else {
         angle = ARGV[1]
     }
+
+    # convert angle to radians
+    angle = radians(angle);
 
     # call the functions to print the results
     sine(angle);
