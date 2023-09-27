@@ -2,7 +2,11 @@
 #
 # DFP
 
+function tan(angle)
+{
+	return sin(angle)/cos(angle);
+}
 function tangent(angle)
 {
-    printf("tan(%f) = %f\n", angle, tan(angle);
+    printf("tan(%f) = %f\n", angle, tan(angle));
 }
